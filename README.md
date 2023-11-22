@@ -18,7 +18,7 @@ authors:
     orcid: 0009-0008-5892-9302
     affiliation: 4
   - name: Van Q. Truong
-    orcid: 0000-0002-5485-1818
+orcid: 0000-0002-5485-1818
 affiliation: 5,6
   - name: David Enoma
     orcid: 0000-0001-7300-8474
@@ -80,7 +80,7 @@ affiliations:
   - name: Genomics and Computational Biology Graduate Group, University of Pennsylvania Perelman School of Medicine, 3700 Hamilton Walk, Philadelphia, PA, 19104, USA
     index: 5
   - name: Institute for Biomedical Informatics, University of Pennsylvania Perelman School of Medicine, 3700 Hamilton Walk, Philadelphia, PA, 19104, USA
-index: 6
+    index: 6
   - name: Cumming School of Medicine, University of Calgary, 3330 Hospital Dr NW, Calgary, AB T2N 4N1, Canada
     index: 7
   - name: Department of Biomedical Informatics, University of Pittsburgh
@@ -90,9 +90,9 @@ index: 6
   - name: DNAnexus, 1975 West El Camino Real Suite 101 Mountain View, CA 94040
     index: 10
   - name: School of Computer Science, Carnegie Mellon University
-    index: 11
+index: 11
   - name: Independent Scientist
-index: 12
+    index: 12
   - name: Computational Biology Department, Carnegie Mellon University
     index: 13
   - name: Computational Biology Department, Carnegie Mellon University
