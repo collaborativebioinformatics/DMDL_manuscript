@@ -2,10 +2,10 @@
 title: 'The fourth annual Carnegie Mellon Libraries hackathon for biomedical data management, knowledge graphs, and deep learning'
 tags:
   - BioHackathon
-  - Biomedical data
+  - Biomedical data management
+  - Deep learning
   - Large language models
   - Knowledge graphs
-  - Deep learning
   - FAIR data
 authors:
   - name: Jędrzej Kubica
@@ -19,27 +19,27 @@ authors:
     affiliation: 4
   - name: Van Q. Truong
     orcid: 0000-0002-5485-1818
-    affiliation: 5,6
-  - name: Nicholas P. Cooley
-    orcid: 0000-0002-6029-304X
-    affiliation: 7
-  - name: Minhyek Jeon
-    orcid: 0000-0001-5208-5921
-    affiliation: 8
-  - name: Chiao-Feng Lin
-    orcid: 0000-0002-6177-8807
-    affiliation: 9
-  - name: Minh Tran
-    orcid: 0009-0006-0010-9331
-    affiliation: 10
-  - name: Amrita Roy Choudhury
-    orcid: 0000-0003-2795-7219
-    affiliation: 11
-  - name: Xinrong Du
-    orcid: 0009-0004-6548-3688
-    affiliation: 12
+affiliation: 5,6
   - name: David Enoma
     orcid: 0000-0001-7300-8474
+    affiliation: 7
+  - name: Nicholas P. Cooley
+    orcid: 0000-0002-6029-304X
+    affiliation: 8
+  - name: Minhyek Jeon
+    orcid: 0000-0001-5208-5921
+    affiliation: 9
+  - name: Chiao-Feng Lin
+    orcid: 0000-0002-6177-8807
+    affiliation: 10
+  - name: Minh Tran
+    orcid: 0009-0006-0010-9331
+    affiliation: 11
+  - name: Amrita Roy Choudhury
+    orcid: 0000-0003-2795-7219
+    affiliation: 12
+  - name: Xinrong Du
+    orcid: 0009-0004-6548-3688
     affiliation: 13
   - name: Shashank Katiyar
     orcid: 0009-0004-2265-2883
@@ -53,7 +53,7 @@ authors:
     orcid: 0009-0000-5853-3043
     affiliation: 17
   - name: Soham Shirolkar
-    orcid: ​​0009-0004-4798-899X
+    orcid: 0009-0004-4798-899X
     affiliation: 18
   - name: Thomas Yu Chow Tam
     orcid: 0000-0002-1779-9512
@@ -80,26 +80,26 @@ affiliations:
   - name: Genomics and Computational Biology Graduate Group, University of Pennsylvania Perelman School of Medicine, 3700 Hamilton Walk, Philadelphia, PA, 19104, USA
     index: 5
   - name: Institute for Biomedical Informatics, University of Pennsylvania Perelman School of Medicine, 3700 Hamilton Walk, Philadelphia, PA, 19104, USA
-    index: 6
-  - name: No affiliation
+index: 6
+  - name: Cumming School of Medicine, University of Calgary, 3330 Hospital Dr NW, Calgary, AB T2N 4N1, Canada
     index: 7
-  - name: Computational Biology Department, Carnegie Mellon University
+  - name: Department of Biomedical Informatics, University of Pittsburgh
     index: 8
-  - name: No affiliation
-    index: 9
-  - name: School of Computer Science, Carnegie Mellon University
-    index: 10
-  - name: No affiliation
-    index: 11
   - name: Computational Biology Department, Carnegie Mellon University
-    index: 12
-  - name: Cumming School of Medicine, University of Calgary, 3330 Hospital Dr NW, Calgary, AB T2N 4N1, Canada
+    index: 9
+  - name: DNAnexus, 1975 West El Camino Real Suite 101 Mountain View, CA 94040
+    index: 10
+  - name: School of Computer Science, Carnegie Mellon University
+    index: 11
+  - name: Independent Scientist
+index: 12
+  - name: Computational Biology Department, Carnegie Mellon University
     index: 13
   - name: Computational Biology Department, Carnegie Mellon University
     index: 14
-  - name: No affiliation
+  - name: Carnegie Mellon University
     index: 15
-  - name: No affiliation
+  - name: Independent Scientist
     index: 16
   - name: Mellon College of Science, Carnegie Mellon University
     index: 17
@@ -107,7 +107,7 @@ affiliations:
     index: 18
   - name: Carnegie Mellon University, Pittsburgh, PA 15213
     index: 19
-  - name: No affiliation
+  - name: Carnegie Mellon University
     index: 20
   - name: Carnegie Mellon University Libraries, Pittsburgh, PA 15213
     index: 21
@@ -129,13 +129,16 @@ In October 2023, a group of 44 scientists hailing from several U.S. states, Cana
 ## Code Availability:
 
 Virus Susceptibility: https://github.com/collaborativebioinformatics/virussusceptibility
+
 Graph Based Tuning: https://github.com/collaborativebioinformatics/graphbasedtuning 
+
 VCFs to Knowledge Graphs: https://github.com/collaborativebioinformatics/vcfs2kgs
+
 Knowledge Graph Based Validation: https://github.com/collaborativebioinformatics/kgbasedvalidation
 
 ## Virus Susceptibility
 
-The COVID-19 pandemic has generated a substantial body of scientific literature, prompting innovative approaches to address complex questions surrounding the disease [@wang_text_2021]. The Virus Susceptibility team employed vector comparison inferences to identify correlations between COVID-19 susceptibility and chronic diseases (e.g., cancer, hypertension, or diabetes). To enhance our search capabilities for relevant articles, we constructed vector databases using the CORD-19 dataset [@wang_cord-19_2020], These databases brought significant improvements in performance, scalability, and flexibility in searching for relevant articles using certain queries [@noauthor_httpswwwpineconeiolearnvector-database_nodate; @noauthor_httpslearnmicrosoftcomen-ussemantic-kernelmemoriesvector-db_nodate]. We tested our pipeline on both a subset of the CORD-19 dataset as well as on the entire dataset. Furthermore, we extended our efforts by creating a custom vector database using 40 articles within the CORD-19 dataset. These articles were processed using SPECTER, and we conducted subsequent tests to evaluate the retrieval capabilities of the corresponding articles..
+The COVID-19 pandemic has generated a substantial body of scientific literature, prompting innovative approaches to address complex questions surrounding the disease [@wang_text_2021]. The Virus Susceptibility team employed vector comparison inferences to identify correlations between COVID-19 susceptibility and chronic diseases (e.g., cancer, hypertension, or diabetes). To enhance our search capabilities for relevant articles, we constructed vector databases using the CORD-19 dataset [@wang_cord-19_2020], These databases brought significant improvements in performance, scalability, and flexibility in searching for relevant articles using certain queries [@noauthor_httpswwwpineconeiolearnvector-database_nodate; @noauthor_httpslearnmicrosoftcomen-ussemantic-kernelmemoriesvector-db_nodate]. We tested our pipeline on both a subset of the CORD-19 dataset as well as on the entire dataset. Furthermore, we extended our efforts by creating a custom vector database using 40 articles within the CORD-19 dataset. These articles were processed using SPECTER, and we conducted subsequent tests to evaluate the retrieval capabilities of the corresponding articles.
 ## Graph-Based Tuning
 
 As large language models (LLMs) continue to improve in speed and accuracy, their applications in the biomedical field are becoming increasingly valuable. For instance, LLMs can be used in drug treatment recommendations for various diseases where time and precision are paramount [@thirunavukarasu_large_2023]. Additionally, empirical evidence shows that LLMs consistently outperform smaller language models in various complex and contextual tasks [@wei_emergent_2022]. However, for LLMs to provide accurate drug treatment recommendations, they must be trained on factually correct and updated training data, which often does not occur. Furthermore, it is also crucial for LLMs to answer queries based on given context [@chang_survey_2023], especially when taking into consideration scientific articles on precision medicine that often contain critical subtleties. Knowledge Graphs (KGs) have emerged as state-of-the-art methods for capturing relationships between data points, offering a means to supply LLMs with contextually relevant knowledge [@yasunaga_qa-gnn_2022]. Hence, an LLM fine-tuned on a KG can be given the ability to answer complex biomedical queries, addressing the above issues. Therefore, we believe that fine-tuning an LLM with knowledge graphs related to biomedicine can improve its ability in recommending drug treatment. In our experiments, we fine-tuned the Llama 2 model [@touvron_llama_2023] and benchmarked it against ChatGPT and the original Llama 2 models using medical queries. Our fine-tuned LLAMA2Glendalorian model is deployed on HuggingFace (llama-2-7b-glendalorian)[https://huggingface.co/tminh/llama-2-7b-glendalorian].
@@ -160,8 +163,6 @@ In the Knowledge Graph Based Validation project, we aimed to explore the applica
 
 ![Figure 1. Virus Susceptibility workflow.](./figures/virus_susceptibility_workflow.png)\
 **Figure 1.** Virus Susceptibility workflow.
-
-
 
 ## Graph Based Tuning
 
@@ -203,7 +204,7 @@ We first acquired data from the TCGA COAD-CPTAC dataset, mentioned above and pre
 
 To ensure data harmonization, especially when dealing with the potential integration of data across cohorts (although not implemented in this instance, but is feasible within this framework), we obtained MONDO concepts for various diseases from the MONDO database. Similarly,  we acquired HUGO concepts for each gene. This approach enabled us to establish a unified representation for genes and diseases across various cohorts, addressing potential heterogeneity issues that are most likely to emerge across nodes in the graph between cohorts and where harmonization is critical.
 
-To reduce the number of variants included within the dataset as a proof-of-concept, we filtered the genes contained within the graph to only include those with ClinVar-annotated variants across the entire cohort. However, the same framework can be applied without this filtering step to substantially enrich the graph and enable possible link prediction and inference tasks (of which genes may be associated with disease, for example). The code to implement this is included in the repository (https://github.com/collaborativebioinformatics/vcfs2kgs) as a Python notebook `tcga_rdf.ipynb` that can be run directly so long as the data is downloaded and provided, and a BioPortal API key is acquired (which can be done for free). 
+To reduce the number of variants included within the dataset as a proof-of-concept, we filtered the genes contained within the graph to only include those with ClinVar-annotated variants across the entire cohort. However, the same framework can be applied without this filtering step to substantially enrich the graph and enable possible link prediction and inference tasks (of which genes may be associated with disease, for example). The code to implement this is included in the repository (https://github.com/collaborativebioinformatics/vcfs2kgs) as a Python notebook `tcga_rdf.ipynb` that can be run directly so long as the data is downloaded and provided, and a BioPortal API key is acquired (which can be done for free).
 
 ## Knowledge Graph Based Validation
 
@@ -215,7 +216,7 @@ Prompt 1: “User: Create subject predicate subject logic triplets using some mo
 
 Prompt 2: “User: Create subject predicate subject logic triplets using some genes and their disease associations and output it as a subject predicate subject logic triplet. An example subject predicate subject triplet could be Biliary Atresia - results in - biliary obstruction. Create 10 of these triplets.”
 
-Prompt 3: “Create subject predicate subject logic triplets using singlue nucleotide polymorphism rs rs113993960 and their disease associations and output it as a subject predicate subject logic triplet. An example subject predicate subject triplet could be Biliary Atresia - results in - biliary obstruction. Create10 of these triplets.” [sic]
+Prompt 3: “Create subject predicate subject logic triplets using singlue nucleotide polymorphism rs rs113993960 and their disease associations and output it as a subject predicate subject logic triplet. An example subject predicate subject triplet could be Biliary Atresia - results in - biliary obstruction. Create10 of these triplets.”
 
 We then compared the results of these models to the DisGeNet associations. The code for all of these can be found in the repository (https://github.com/collaborativebioinformatics/kgbasedvalidation/) with documentation in the repository describing the required dependencies and installation instructions. 
 
@@ -223,16 +224,15 @@ We then compared the results of these models to the DisGeNet associations. The c
 
 ## Virus Susceptibility
 
-Building and querying the vector database that was previously created using the embeddings from the CORD-19 dataset didn't show the expected result (articles related to the topic of the query). This highlights a possibility for improvement in data and code reproducibility. Building our own custom vector database from the CORD-19 articles and querying it yields articles relevant to the query. For example, the query, “hypertension” Example results for a query “hypertension” shows provided search results that included an article related to cardiovascular diseases. This result can be found on the GitHub page. Querying the vector database with the embedded query takes only ~190 ms.
-
+Building and querying the vector database that was previously created using the embeddings from the CORD-19 dataset didn't show the expected result (articles related to the topic of the query). This highlights a possibility for improvement in data and code reproducibility. Building our own custom vector database from the CORD-19 articles and querying it yields articles relevant to the query. Example results for a query “hypertension” show provided search results that included an article related to cardiovascular diseases. This result can be found on the GitHub page. Querying the vector database with the embedded query takes only ~190 ms.
 ## Graph Based Tuning
 
-The results show that neither ChatGPT nor the original Llama model 2 were able to relate specific drug (ID: D0Y6UB) to the target protein (see **Figures 6 and 7**), whereas our LLAMA2Glendalorian model suggested a putative target protein (POL_HV1B1) for the drug with the corresponding binding relationship (see **Figure 8**). In most of our experiments, the improvement from the 13B models over the 7B models indicates that use of larger models – or leveraging smaller models – is warranted for questions in the biomedical domain that were appropriate for deep learning models, such as those involving many-to-many comparisons and finding contextualized etiologies.  
+The results show that neither ChatGPT nor the original Llama model 2 were able to relate specific drug (ID: D0Y6UB) to the target protein (see **Figures 6 and 7**), whereas our LLAMA2Glendalorian model suggested a putative target protein (POL_HV1B1) for the drug with the corresponding binding relationship (see **Figure 8**). In most of our experiments, the improvement from the 13B models over the 7B models indicates that use of larger models – or leveraging smaller models – is warranted for questions in the biomedical domain that were appropriate for deep learning models, such as those involving many-to-many comparisons and finding contextualised etiologies.  
 
 ![Figure 6. Response from ChatGPT to the benchmark prompt.](./figures/chat_gpt_response.png)\
 **Figure 6.** Response from ChatGPT to the benchmark prompt.
 
-![Figure 7. Response from the Llama 2 model to the benchmark prompt.](./figures/llama2_response.png.png)\
+![Figure 7. Response from the Llama 2 model to the benchmark prompt.](./figures/llama2_response.png)\
  **Figure 7.** Response from the Llama 2 model to the benchmark prompt.
 
 
@@ -300,66 +300,66 @@ The single nucleotide polymorphisms/variants that we evaluated are shown in **Ta
 
 # Conclusion and Future Directions
 
-The advent of large language models (LLMs) has provided a unique opportunity in the biomedical domain. LLMs have shown the capability in outputting code or file formats given natural language prompts, synthesizing data, and extracting relevant information from corpus.  
+The advent of large language models (LLMs) has provided a unique opportunity in the biomedical domain. LLMs have shown the capability in outputting code or file formats given natural language prompts, synthesising data, and extracting relevant information from corpus.  
 
 ## Future Directions for the Teams Involved in this Hackathon
 
 ## Virus Susceptibility
 
-	•	Create a vector database of 1M CORD-19 articles
-	•	Develop a more efficient method to generate queries for the vector database
-	•	Use the vector database to ask complex scientific questions:
-	•	"What combinations of features predispose cohorts to viral infections?"
-	•	"Which combinations differentially predispose individuals to chronic disease post infection?”
+-	Create a vector database of 1M CORD-19 articles
+-	Develop a more efficient method to generate queries for the vector database
+-	Use the vector database to ask complex scientific questions:
+-	"What combinations of features predispose cohorts to viral infections?"
+-	"Which combinations differentially predispose individuals to chronic disease post infection?”
 
 ## Graph Based Tuning
 
-	•	Fine-tune LLMs onto additional biomedical KGs:
-	•	DrugBank/ROBOKOP 
-	•	Protein-protein interactions
-	•	Drug-drug interactions
+-	Fine-tune LLMs onto additional biomedical KGs:
+-	DrugBank/ROBOKOP 
+-	Protein-protein interactions
+-	Drug-drug interactions
 
 ## VCFs to Knowledge Graphs
 
-	•	Construct sample-sample edges from a genetic relatedness matrix, automatically identifying duplicates and related individuals across cohorts
-	•	Create disease-disease edges based on co-occurrence and different levels of granularity
-	•	Include gene-disease edges from DisGeNet
-	•	Include additional node attributes, e.g.:
-	•	Sample level: original cohort, sex, age 
-	•	Gene level: gene type (protein-coding, noncoding, pseudogene)
+-	Construct sample-sample edges from a genetic relatedness matrix, automatically identifying duplicates and related individuals across cohorts
+-	Create disease-disease edges based on co-occurrence and different levels of granularity
+-	Include gene-disease edges from DisGeNet
+-	Include additional node attributes, e.g.: original cohort, sex, age on the sample level; or gene type (protein-coding, noncoding, pseudogene) on the gene level
 
 ## Knowledge Graph Based Validation
 
-	•	Compress prompts by summarizing abstracts further to reach context windows
-	•	Create an end to end pipeline using DisGeNET
-	•	Implement dynamic parameter tuning and queryable database formatting
-	•	Implement data structures for comparing SPO objects:
-	•	Q/A implement comparison of data structures
-	•	Implement key word predicates to limit the scope of keywords
+-	Compress prompts by summarizing abstracts further to reach context windows
+-	Create an end-to-end pipeline using DisGeNET
+-	Implement dynamic parameter tuning and queryable database formatting
+-	Implement data structures for comparing SPO objects: 
+-	Q/A implement comparison of data structures 
+-	Implement key word predicates to limit the scope of keywords
 
 If you or your colleagues are interested in collaborating on these or similar projects in a hackathon or professional setting, please contact ben.busby@gmail.com. If you have technical questions or issues, please put an issue into one of the github repositories listed below.  
 
 # Data and software availability
 
 All code is provided in the following GitHub repositories, which may include additional links to data repositories and Jupyter Notebooks.
-	•	https://github.com/collaborativebioinformatics/virustrajectory
-	•	https://github.com/collaborativebioinformatics/graphbasedtuning 
-	•	https://github.com/collaborativebioinformatics/vcfs2kgs
-	•	https://github.com/collaborativebioinformatics/kgbasedvalidation
+
+-	https://github.com/collaborativebioinformatics/virustrajectory
+-	https://github.com/collaborativebioinformatics/graphbasedtuning
+-	https://github.com/collaborativebioinformatics/vcfs2kgs
+-	https://github.com/collaborativebioinformatics/kgbasedvalidation
 
 # Acknowledgements
 
 ## Carnegie Mellon Libraries
 
-For providing space – in both Pittsburgh, PA and Palo Alto, CA – as well as refreshments and other logistical support. The authors would especially like to thank Tom Hughes and Melanie Gainey (palo alto coordinator)______???
+For providing space – in both Pittsburgh, PA and Palo Alto, CA – as well as refreshments and other logistical support. The authors would especially like to thank Tom Hughes, Melanie Gainey, and Leigh Mason.
 
 ## DNAnexus
 
-Thanks to DNAnexus for providing compute for the hackathon, as well as the time of BB and CL.  
+Thanks to DNAnexus for providing computing resources for the Hackathon, as well as the time of BB and CL.  
 
 ## Grant funding
 
-Van Q. Truong is supported by the Microsoft Research PhD Fellowship and ACM SIGHPC Computational and Data Science Fellowship.
+Van Q. Truong is supported by the Microsoft Research PhD Fellowship and ACM SIGHPC Computational and Data Science Fellowship. Rachit Kumar is supported by the Training Program in Computational Genomics grant from the National Human Genome Research Institute to the University of Pennsylvania under award number T32HG000046.
 
 # References
+
 
