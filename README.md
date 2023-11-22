@@ -18,8 +18,8 @@ authors:
     orcid: 0009-0008-5892-9302
     affiliation: 4
   - name: Van Q. Truong
-orcid: 0000-0002-5485-1818
-affiliation: 5,6
+    orcid: 0000-0002-5485-1818
+    affiliation: 5,6
   - name: David Enoma
     orcid: 0000-0001-7300-8474
     affiliation: 7
@@ -90,7 +90,7 @@ affiliations:
   - name: DNAnexus, 1975 West El Camino Real Suite 101 Mountain View, CA 94040
     index: 10
   - name: School of Computer Science, Carnegie Mellon University
-index: 11
+  - index: 11
   - name: Independent Scientist
     index: 12
   - name: Computational Biology Department, Carnegie Mellon University
