@@ -265,8 +265,11 @@ The underlying relationships within the graph were constructed based on cohort-s
 
 The single nucleotide polymorphisms/variants that we evaluated are shown below (see **Table 2**). These pairs were collected using the DisGeNET database, as described above. Some examples of the responses from the models tested are provided below in **Figure 10**. Notably, many of the prompts including the abstracts exceeded the recommended context window for some of these models, and we note that prompts approaching the context window recommendation or exceeding it tended to lead to substantially worse performance. 
 
-\\
 
+
+
+
+ 
 **Table 2.** Evaluated SNPs.
 
 | SNP             |                   Diseases                   |
