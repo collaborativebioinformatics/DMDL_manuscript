@@ -115,7 +115,7 @@ affiliations:
     index: 22
 
    
-date: 22 November 2023
+date: 25 November 2023
 bibliography: paper.bib
 authors_short: Kubica J., Kumar R., Hui-En Tan G., Truong Q. V. \emph{et al.}
 group: Virus Susceptibility, Graph Based Tuning, VCFs to Knowledge Graphs, Knowledge Graphs Based Validation
