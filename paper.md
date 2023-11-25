@@ -247,7 +247,8 @@ The results show that neither ChatGPT nor the original Llama model 2 were able t
 
 The underlying relationships within the graph were constructed based on cohort-specific relationships (for example, whether patients have colon adenocarcinoma or not) as well as information acquired from existing clinical knowledge bases. A schema of the ideal graph construction has been provided (see **Figure 9**), with dashed edges representing planned but not implemented (due to time constraints) relationships. Concepts contained within the graph constructed using this framework from the CPTAC dataset are shown below (see **Table 1**) below and embedded within **Figure 9**.
 
-**Table 1.** Concepts for the graph construction.\
+**Table 1.** Concepts for the graph construction.
+
 |   Concept   |   Name                                          |   Number |
 |:-----------:|:-----------------------------------------------:|:--------:|
 |   Node Type |   Sample                                        |   93     |
@@ -264,13 +265,9 @@ The underlying relationships within the graph were constructed based on cohort-s
 ## Knowledge Graph Based Validation
 
 The single nucleotide polymorphisms/variants that we evaluated are shown below (see **Table 2**). These pairs were collected using the DisGeNET database, as described above. Some examples of the responses from the models tested are provided below in **Figure 10**. Notably, many of the prompts including the abstracts exceeded the recommended context window for some of these models, and we note that prompts approaching the context window recommendation or exceeding it tended to lead to substantially worse performance. 
-
-
-
-
-
  
-**Table 2.** Evaluated SNPs.\
+**Table 2.** Evaluated SNPs.
+
 | SNP             |                   Diseases                   |
 |:---------------:|:--------------------------------------------:|
 | rs113993960     | BRONCHIECTASIS                               |
