@@ -163,22 +163,22 @@ In the Knowledge Graph Based Validation project, we aimed to explore the applica
 
 ## Virus Susceptibility
 
-![Figure 1. Virus Susceptibility workflow.](./figures/virus_susceptibility_workflow.png)
+![Figure 1. Virus Susceptibility workflow.](./figures/virus_susceptibility_workflow.png)\
 **Figure 1.** Virus Susceptibility workflow.
 
 ## Graph Based Tuning
 
-![Figure 2.Graph Based Tuning workflow.](./figures/graph_based_tuning_workflow.png)
+![Figure 2.Graph Based Tuning workflow.](./figures/graph_based_tuning_workflow.png)\
 **Figure 2.** Graph Based Tuning workflow.
 
 ## VCFs to Knowledge Graphs
 
-![Figure 3. VCFs to Knowledge Graphs workflow.](./figures/vcfs_to_knowledge_graphs_workflow.png)
+![Figure 3. VCFs to Knowledge Graphs workflow.](./figures/vcfs_to_knowledge_graphs_workflow.png)\
 **Figure 3.** VCFs to Knowledge Graphs workflow.
 
 ## Knowledge Graph Based Validation
 
-![Figure 4. Knowledge Graph Based Validation workflow.](./figures/knowledge_graphs_based_validation_workflow.png)
+![Figure 4. Knowledge Graph Based Validation workflow.](./figures/knowledge_graphs_based_validation_workflow.png)\
 **Figure 4.** Knowledge Graph Based Validation workflow.
 
 # Methods
@@ -194,7 +194,7 @@ As a proof of principle, we created a dataset of ten articles and embedded the a
 ## Graph Based Tuning
 Firstly, 38,617 drug-relationship-target triples were downloaded from the Therapeutic Target Database [@zhou_ttd_2023]. A knowledge graph was generated from 20 sample triples and is shown in **Figure 5**. Then, we developed an algorithm to preprocess such triplets into a prompt-response format for LLAMA2 (see “inputdata.txt”). For instance, a sample prompt would be “[INST] Tell me more about the drug with ID D07OAC. [/INST]” and its corresponding response would be “Drug D07OAC is an inhibitor to target protein S5A2_HUMAN.”
 
-![Figure 5. Knowledge graph generated from 20 sample triples.](./figures/kg_20_triplets.png)
+![Figure 5. Knowledge graph generated from 20 sample triples.](./figures/kg_20_triplets.png)\
 **Figure 5.** Knowledge graph generated from 20 sample triples.
 
 
@@ -232,14 +232,14 @@ Building and querying the vector database that was previously created using the 
 
 The results show that neither ChatGPT nor the original Llama model 2 were able to relate specific drug (ID: D0Y6UB) to the target protein (see **Figures 6 and 7**), whereas our LLAMA2Glendalorian model suggested a putative target protein (POL_HV1B1) for the drug with the corresponding binding relationship (see **Figure 8**). In most of our experiments, the improvement from the 13B models over the 7B models indicates that use of larger models – or leveraging smaller models – is warranted for questions in the biomedical domain that were appropriate for deep learning models, such as those involving many-to-many comparisons and finding contextualised etiologies.  
 
-![Figure 6. Response from ChatGPT to the benchmark prompt.](./figures/chat_gpt_response.png)
+![Figure 6. Response from ChatGPT to the benchmark prompt.](./figures/chat_gpt_response.png)\
 **Figure 6.** Response from ChatGPT to the benchmark prompt.
 
-![Figure 7. Response from the Llama 2 model to the benchmark prompt.](./figures/llama2_response.png)
+![Figure 7. Response from the Llama 2 model to the benchmark prompt.](./figures/llama2_response.png)\
  **Figure 7.** Response from the Llama 2 model to the benchmark prompt.
 
 
-![Figure 8. Response from the LLAMA2Glendalorian model to the benchmark prompt.](./figures/llama2glendalorian_response.png)
+![Figure 8. Response from the LLAMA2Glendalorian model to the benchmark prompt.](./figures/llama2glendalorian_response.png)\
 **Figure 8.** Response from the LLAMA2Glendalorian model to the benchmark prompt.
 
 
@@ -257,7 +257,7 @@ The underlying relationships within the graph were constructed based on cohort-s
 |  Edge Type  | isCancerTypeOf (connects Sample -> Cancer Type) |  93      |
 |  Edge Type  | hasHugoSymbol (connects Sample -> Gene)         |  15285   |
 
-![Figure 9. A schema of an ideal graph construction.](./figures/ideal_graph_construction.png)
+![Figure 9. A schema of an ideal graph construction.](./figures/ideal_graph_construction.png)\
 **Figure 9.** A schema of an ideal graph construction.
 
 
