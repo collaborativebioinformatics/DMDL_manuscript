@@ -119,6 +119,7 @@ date: 22 November 2023
 bibliography: paper.bib
 authors_short: Kubica J., Kumar R., Hui-En Tan G., Truong Q. V. \emph{et al.}
 group: Virus Susceptibility, Graph Based Tuning, VCFs to Knowledge Graphs, Knowledge Graphs Based Validation
+event: Other
 git_url: https://github.com/collaborativebioinformatics/DMDL_manuscript
 ---
 
