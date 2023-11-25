@@ -258,6 +258,7 @@ The underlying relationships within the graph were constructed based on cohort-s
 |  Edge Type  | hasHugoSymbol (connects Sample -> Gene)         |  15285   |
 
 ![Figure 9. A schema of an ideal graph construction.](./figures/ideal_graph_construction.png)\
+
 **Figure 9.** A schema of an ideal graph construction.
 
 
