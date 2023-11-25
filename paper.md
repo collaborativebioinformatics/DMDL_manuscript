@@ -270,31 +270,31 @@ The single nucleotide polymorphisms/variants that we evaluated are shown below (
 | SNP             |                   Diseases                   |
 |:---------------:|:--------------------------------------------:|
 | rs113993960     | BRONCHIECTASIS                               |
-| rs113993960     | Stenosis of duodenum                         |
-| rs113993960     | Congenital bilateral aplasia of vas deferens |
-| rs113993960     | Hereditary pancreatitis                      |
-| rs113993960     | Recurrent pancreatitis                       |
-| rs113993960     | Cystic Fibrosis                              |
+|                 | Stenosis of duodenum                         |
+|                 | Congenital bilateral aplasia of vas deferens |
+|                 | Hereditary pancreatitis                      |
+|                 | Recurrent pancreatitis                       |
+|                 | Cystic Fibrosis                              |
 | rs199473282     | LONG QT SYNDROME 3                           |
-| rs199473282     | Brugada Syndrome (disorder)                  |
-| rs199473282     | Brugada Syndrome 1                           |
-| rs199473282     | Long QT Syndrome                             |
-| rs199473282     | Hereditary bundle branch system defect       |
+|                 | Brugada Syndrome (disorder)                  |
+|                 | Brugada Syndrome 1                           |
+|                 | Long QT Syndrome                             |
+|                 | Hereditary bundle branch system defect       |
 | rs121909211     | Plaque, Amyloid                              |
-| rs121909211     | Familial Amyloid Polyneuropathy, Type V      |
-| rs121909211     | Corneal dystrophy                            |
-| rs121909211     | Corneal deposit                              |
-| rs121909211     | Corneal Dystrophy, Lattice Type IIIA         |
-| rs121909211     | Dystrophy, granular                          |
-| rs121909211     | Reis-Bucklers' corneal dystrophy             |
-| rs121909211     | Corneal guttata                              |
-| rs121909211     | Lattice corneal dystrophy Type I             |
-| rs121909211     | Amyloidosis                                  |
-| rs121909211     | Neoplasms                                    |
-| rs121909211     | Granular Dystrophy, Corneal                  |
-| rs121909211     | Thiel-Behnke corneal dystrophy               |
-| rs121909211     | Stromal Dystrophies, Corneal                 |
-| rs121909211     | Avellino corneal dystrophy                   |
+|                 | Familial Amyloid Polyneuropathy, Type V      |
+|                 | Corneal dystrophy                            |
+|                 | Corneal deposit                              |
+|                 | Corneal Dystrophy, Lattice Type IIIA         |
+|                 | Dystrophy, granular                          |
+|                 | Reis-Bucklers' corneal dystrophy             |
+|                 | Corneal guttata                              |
+|                 | Lattice corneal dystrophy Type I             |
+|                 | Amyloidosis                                  |
+|                 | Neoplasms                                    |
+|                 | Granular Dystrophy, Corneal                  |
+|                 | Thiel-Behnke corneal dystrophy               |
+|                 | Stromal Dystrophies, Corneal                 |
+|                 | Avellino corneal dystrophy                   |
 
 ![Figure 10. Outputs from the tested LLMs.](./figures/outputs_from_tested_llms.png)\
 **Figure 10.** Outputs from the tested LLMs.
