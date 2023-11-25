@@ -243,13 +243,14 @@ The results show that neither ChatGPT nor the original Llama model 2 were able t
 
 ## VCFs to Knowledge Graphs
 
-The underlying relationships within the graph were constructed based on cohort-specific relationships (for example, whether patients have colon adenocarcinoma or not) as well as information acquired from existing clinical knowledge bases. A schema of the ideal graph construction has been provided (see **Figure 9**), with dashed edges representing planned but not implemented (due to time constraints) relationships. Concepts contained within the graph constructed using this framework from the CPTAC dataset are described in **Table 1** below and embedded within **Figure 9**.
+The underlying relationships within the graph were constructed based on cohort-specific relationships (for example, whether patients have colon adenocarcinoma or not) as well as information acquired from existing clinical knowledge bases. A schema of the ideal graph construction has been provided (see **Figure 9**), with dashed edges representing planned but not implemented (due to time constraints) relationships. Concepts contained within the graph constructed using this framework from the CPTAC dataset are described in (see **Table 1**) below and embedded within **Figure 9**.
 
 ![Figure 9. A schema of an ideal graph construction.](./figures/ideal_graph_construction.png)\
 **Figure 9.** A schema of an ideal graph construction.
 
 
 **Table 1.** Concepts for the graph construction. 
+
 |   Concept   |   Name                                          |   Number |
 |:-----------:|:-----------------------------------------------:|:--------:|
 |   Node Type |   Sample                                        |   93     |
