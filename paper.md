@@ -127,7 +127,11 @@ git_url: https://github.com/collaborativebioinformatics/DMDL_manuscript
 
 In October 2023, a group of 44 scientists hailing from several U.S. states, Canada, Poland, and Switzerland came together for a hybrid in-person and virtual hackathon. The event was jointly hosted by Carnegie Mellon University Libraries and DNAnexus, a California-based cloud computing and bioinformatics company. This collaborative effort revolved around the theme of “Data Management and Graph Extraction for Large Transformer Models in the Biomedical Space.” In the spirit of fostering collaboration, participants organized themselves into five teams, which ultimately resulted in the successful completion of four hackathon projects. These projects encompassed a wide range of topics, from detecting features contributing to virus susceptibility to validating models using knowledge graphs. Repositories for the hackathon projects are available at https://github.com/collaborativebioinformatics. We hope that the insights and experiences shared by these teams, as detailed in the following manuscript, will prove valuable to the broader scientific community. 
 
-<div style="page-break-after: always;"></div>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
 
 ## Code Availability:
 
@@ -265,6 +269,10 @@ The underlying relationships within the graph were constructed based on cohort-s
 ## Knowledge Graph Based Validation
 
 The single nucleotide polymorphisms/variants that we evaluated are shown below (see **Table 2**). These pairs were collected using the DisGeNET database, as described above. Some examples of the responses from the models tested are provided below in **Figure 10**. Notably, many of the prompts including the abstracts exceeded the recommended context window for some of these models, and we note that prompts approaching the context window recommendation or exceeding it tended to lead to substantially worse performance. 
+
+<br/><br/>
+<br/><br/>
+<br/><br/>
 
 **Table 2.** Evaluated SNPs.
 
