@@ -191,6 +191,7 @@ The CORD-19 dataset [@wang_cord-19_2020] contains metadata and embeddings that a
 We downloaded SPECTER from GitHub (https://github.com/allenai/specter) and used it to create an embedding for an example query (specifically, "What combinations of features predispose cohorts to virus susceptibility?"). Next, we compared the embedding of the example query with all of the embeddings in the dataset and ranked the comparisons according to cosine similarity. Thus, the highest-ranked paper retrieved should be the closest contextual match to the example query (i.e., the highest ranked paper should have the highest measure of cosine similarity).
 Remark: Cosine similarity turned out to be unsuitable for high-dimensional vector comparison. For this reason we reduced the dimensionality of vectors with random projection (http://people.ee.duke.edu/{\textasciitilde}lcarin/p93.pdf; https://towardsdatascience.com/random-projection-in-python-705883a19e48); specifically, Gaussian random projection (https://scikit-learn.org/stable/modules/generate/sklearn.random\_projection.{GaussianRandomProjection}.html). Then, we used cosine similarity to search for articles that showed  the highest relevance with respect to the query.
 As a proof of principle, we created a dataset of ten articles and embedded the articles SPECTER [@cohan_specter_2020]. The embeddings were subsequently inserted into a vector database. Lastly, we tested the retrieval of the most relevant articles. The corresponding workflow is provided on the project GitHub page (https://github.com/collaborativebioinformatics/virussusceptibility/scripts/query_custom_dataset.ipynb).
+
 ## Graph Based Tuning
 Firstly, 38,617 drug-relationship-target triples were downloaded from the Therapeutic Target Database [@zhou_ttd_2023]. A knowledge graph was generated from 20 sample triples and is shown in **Figure 5**. Then, we developed an algorithm to preprocess such triplets into a prompt-response format for LLAMA2 (see “inputdata.txt”). For instance, a sample prompt would be “[INST] Tell me more about the drug with ID D07OAC. [/INST]” and its corresponding response would be “Drug D07OAC is an inhibitor to target protein S5A2_HUMAN.”
 
@@ -247,10 +248,6 @@ The results show that neither ChatGPT nor the original Llama model 2 were able t
 
 The underlying relationships within the graph were constructed based on cohort-specific relationships (for example, whether patients have colon adenocarcinoma or not) as well as information acquired from existing clinical knowledge bases. A schema of the ideal graph construction has been provided (see **Figure 9**), with dashed edges representing planned but not implemented (due to time constraints) relationships. Concepts contained within the graph constructed using this framework from the CPTAC dataset are shown below (see **Table 1**) below and embedded within **Figure 9**.
 
-![Figure 9. A schema of an ideal graph construction.](./figures/ideal_graph_construction.png)\
-**Figure 9.** A schema of an ideal graph construction.
-
-
 **Table 1.** Concepts for the graph construction. 
 
 |   Concept   |   Name                                          |   Number |
@@ -261,12 +258,16 @@ The underlying relationships within the graph were constructed based on cohort-s
 |  Edge Type  | isCancerTypeOf (connects Sample -> Cancer Type) |  93      |
 |  Edge Type  | hasHugoSymbol (connects Sample -> Gene)         |  15285   |
 
+![Figure 9. A schema of an ideal graph construction.](./figures/ideal_graph_construction.png)\
+**Figure 9.** A schema of an ideal graph construction.
+
 
 ## Knowledge Graph Based Validation
 
 The single nucleotide polymorphisms/variants that we evaluated are shown below (see **Table 2**). These pairs were collected using the DisGeNET database, as described above. Some examples of the responses from the models tested are provided below in **Figure 10**. Notably, many of the prompts including the abstracts exceeded the recommended context window for some of these models, and we note that prompts approaching the context window recommendation or exceeding it tended to lead to substantially worse performance. 
 
 **Table 2.** Evaluated SNPs.
+
 | SNP             |                   Diseases                   |
 |:---------------:|:--------------------------------------------:|
 | rs113993960     | BRONCHIECTASIS                               |
@@ -295,8 +296,6 @@ The single nucleotide polymorphisms/variants that we evaluated are shown below (
 | rs121909211     | Thiel-Behnke corneal dystrophy               |
 | rs121909211     | Stromal Dystrophies, Corneal                 |
 | rs121909211     | Avellino corneal dystrophy                   |
-
-
 
 ![Figure 10. Outputs from the tested LLMs.](./figures/outputs_from_tested_llms.png)\
 **Figure 10.** Outputs from the tested LLMs.
