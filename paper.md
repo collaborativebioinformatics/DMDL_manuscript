@@ -131,7 +131,7 @@ In October 2023, a group of 44 scientists hailing from several U.S. states, Cana
 
 Virus Susceptibility: https://github.com/collaborativebioinformatics/virussusceptibility
 
-Graph Based Tuning: https://github.com/collaborativebioinformatics/graphbasedtunin
+Graph Based Tuning: https://github.com/collaborativebioinformatics/graphbasedtuning
 
 VCFs to Knowledge Graphs: https://github.com/collaborativebioinformatics/vcfs2kgs 
 
