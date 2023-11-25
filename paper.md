@@ -167,7 +167,7 @@ In the Knowledge Graph Based Validation project, we aimed to explore the applica
 
 ## Graph Based Tuning
 
-![Figure 2.Graph Based Tuning workflow.](./figures/graph_based_tuning_workflow.png =50x100)\
+![Figure 2.Graph Based Tuning workflow.](./figures/graph_based_tuning_workflow.png)\
 **Figure 2.** Graph Based Tuning workflow.
 
 ## VCFs to Knowledge Graphs
