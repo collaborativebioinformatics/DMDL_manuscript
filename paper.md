@@ -8,16 +8,16 @@ tags:
   - Knowledge graphs
   - FAIR data
 authors:
-  - name: Jędrzej Kubica
+  - name: Jędrzej Kubica*
     orcid: 0000-0001-7037-3900
     affiliation: 1
-  - name: Rachit Kumar
+  - name: Rachit Kumar*
     orcid: 0000-0002-7736-3307
     affiliation: 2,3
-  - name: Glenda Hui-En Tan
+  - name: Glenda Hui-En Tan*
     orcid: 0009-0008-5892-9302
     affiliation: 4
-  - name: Van Q. Truong
+  - name: Van Q. Truong*
     orcid: 0000-0002-5485-1818
     affiliation: 5,6
   - name: David Enoma
@@ -122,6 +122,8 @@ group: Virus Susceptibility, Graph Based Tuning, VCFs to Knowledge Graphs, Knowl
 event: CMU / DNAnexus Hackathon 2023
 git_url: https://github.com/collaborativebioinformatics/DMDL_manuscript
 ---
+
+* These authors contributed equally
 
 # Introduction
 
