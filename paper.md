@@ -123,7 +123,7 @@ event: CMU / DNAnexus Hackathon 2023
 git_url: https://github.com/collaborativebioinformatics/DMDL_manuscript
 ---
 
-* These authors contributed equally
+\* These authors contributed equally
 
 # Introduction
 
